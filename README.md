@@ -2,7 +2,7 @@ QuranTimingFiles
 ================
 
 This repository contains scripts to generate timing files to enable gapless playback in Quran applications. For this, it needs a gapless mp3 file for each surah and individual mp3 ayah files for each those surahs.
-See examples of mp3 files required in the surahs/ and ayahs/ directory. Timing files generated for the surahs in these directories are present in the timingFiles/ directory.
+See examples of mp3 files required in the surahs/ and ayahs/ directory. Timing files generated for the surahs in these directories are present in the timingFiles/ directory
 Note: The scripts are not capable of generating timings from just gapless mp3s. Both a gapless surah and individual ayahs are needed to detect ayah start positions.
 
 ## Dependencies
