@@ -26,7 +26,7 @@ NUMBER_OF_PARALLEL_PROCESSES = multiprocessing.cpu_count()
 def fingerprint(args):
   print args
   (surahDirectory, surahFile) = args
-  surahFile = surahDirectory + "/" + surahFile
+  surahFile = surahDirectory.rstrip('/') + "/" + surahFile
   
   databaseName= "dejavu" + os.path.basename(surahFile)[:3]
   # MySQL database config
