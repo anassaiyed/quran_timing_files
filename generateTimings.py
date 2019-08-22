@@ -108,6 +108,10 @@ def generateTimingFileForSurah(args):
             print "Getting start time of " + ayahPath + " in the whole(gapless) surah file."
             # Call the dejavu recognize method to get the start time of the ayah
             ayah = djv.recognize(FileRecognizer, ayahPath)
+            if ayah is None:
+                f.write('Error: ayah time not found!\n')
+                print "error: None\n\n"
+                continue
             print ayah
 
             ayah_start_millis = ayah["offset_seconds"] * 1000
